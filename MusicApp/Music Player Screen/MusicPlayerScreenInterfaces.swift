@@ -12,4 +12,6 @@ protocol MusicPlayerView: AnyObject {
 protocol MusicPlayerViewModel {
     var view: MusicPlayerView? { get set }
     var title: String { get }
+    
+    func fetchMusicData()
 }
