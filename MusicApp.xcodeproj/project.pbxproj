@@ -21,6 +21,7 @@
 		2567CA6E2AC728F400425061 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2567CA6D2AC728F400425061 /* Request.swift */; };
 		2567CA712AC72A3700425061 /* MusicListViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2567CA702AC72A3700425061 /* MusicListViewModelImpl.swift */; };
 		2567CA732AC72A5800425061 /* MusicListViewInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2567CA722AC72A5800425061 /* MusicListViewInterfaces.swift */; };
+		2567CA752AC72E8800425061 /* MusicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2567CA742AC72E8800425061 /* MusicListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		2567CA6D2AC728F400425061 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		2567CA702AC72A3700425061 /* MusicListViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewModelImpl.swift; sourceTree = "<group>"; };
 		2567CA722AC72A5800425061 /* MusicListViewInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewInterfaces.swift; sourceTree = "<group>"; };
+		2567CA742AC72E8800425061 /* MusicListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			children = (
 				2567CA722AC72A5800425061 /* MusicListViewInterfaces.swift */,
 				2567CA392AC7208200425061 /* MusicListViewController.swift */,
+				2567CA742AC72E8800425061 /* MusicListTableViewCell.swift */,
 				2567CA702AC72A3700425061 /* MusicListViewModelImpl.swift */,
 			);
 			path = "Music List Screen";
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2567CA732AC72A5800425061 /* MusicListViewInterfaces.swift in Sources */,
+				2567CA752AC72E8800425061 /* MusicListTableViewCell.swift in Sources */,
 				2567CA3A2AC7208200425061 /* MusicListViewController.swift in Sources */,
 				2567CA362AC7208200425061 /* AppDelegate.swift in Sources */,
 				2567CA6C2AC728DB00425061 /* MockApiManager.swift in Sources */,

@@ -37,7 +37,7 @@ class MusicListViewController: UITableViewController, MusicListView {
     // MARK: - Setup
     
     private func setUpTableView() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(MusicListTableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
 }
@@ -77,9 +77,9 @@ extension MusicListViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? MusicListTableViewCell else { return UITableViewCell() }
         let music = viewModel.state.musicList[indexPath.row]
-        cell.textLabel?.text = music.title
+        cell.configure(for: music)
         return cell
     }
     
