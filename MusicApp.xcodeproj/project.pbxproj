@@ -26,6 +26,7 @@
 		2567CA7A2AC7301900425061 /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2567CA792AC7301900425061 /* MusicPlayerViewController.swift */; };
 		2567CA7C2AC7302100425061 /* MusicPlayerViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2567CA7B2AC7302100425061 /* MusicPlayerViewModelImpl.swift */; };
 		2567CA7E2AC7309600425061 /* MusicPlayerViewAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2567CA7D2AC7309600425061 /* MusicPlayerViewAssembler.swift */; };
+		2567CA802AC7337100425061 /* Kalimba.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2567CA7F2AC7337100425061 /* Kalimba.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		2567CA792AC7301900425061 /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
 		2567CA7B2AC7302100425061 /* MusicPlayerViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewModelImpl.swift; sourceTree = "<group>"; };
 		2567CA7D2AC7309600425061 /* MusicPlayerViewAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewAssembler.swift; sourceTree = "<group>"; };
+		2567CA7F2AC7337100425061 /* Kalimba.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Kalimba.mp3; path = ../../../../../../Downloads/Kalimba.mp3; sourceTree = "<group>"; };
+		2567CA812AC7337600425061 /* Kalimba.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kalimba.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,7 @@
 				2567CA682AC7222B00425061 /* Network */,
 				2567CA652AC720A200425061 /* Models */,
 				2567CA3E2AC7208500425061 /* Assets.xcassets */,
+				2567CA812AC7337600425061 /* Kalimba.mp3 */,
 				2567CA402AC7208500425061 /* LaunchScreen.storyboard */,
 				2567CA432AC7208500425061 /* Info.plist */,
 			);
@@ -152,6 +156,7 @@
 		2567CA652AC720A200425061 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2567CA7F2AC7337100425061 /* Kalimba.mp3 */,
 				2567CA662AC720B500425061 /* Music.swift */,
 			);
 			path = Models;
@@ -294,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2567CA422AC7208500425061 /* LaunchScreen.storyboard in Resources */,
+				2567CA802AC7337100425061 /* Kalimba.mp3 in Resources */,
 				2567CA3F2AC7208500425061 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
