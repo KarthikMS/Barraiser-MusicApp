@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MusicListViewController: UITableViewController, MusicListView {
+final class MusicListViewController: UITableViewController, MusicListView {
     
     // MARK: - Dependencies
     
@@ -81,6 +81,19 @@ extension MusicListViewController {
         let music = viewModel.state.musicList[indexPath.row]
         cell.configure(for: music)
         return cell
+    }
+    
+}
+
+// MARK: - UITableViewDelegate
+
+extension MusicListViewController {
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let music = viewModel.state.musicList[indexPath.row]
+        let musicPlayerViewController = MusicPlayerViewAssembler.getView(for: music)
+        navigationController?.pushViewController(musicPlayerViewController, animated: true)
     }
     
 }
