@@ -18,7 +18,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         self.window = window
         
-        let musicListViewController = MusicListViewController(viewModel: MusicListViewModelImpl())
+        let musicListViewModel = MusicListViewModelImpl(apiManager: MockApiManager())
+        let musicListViewController = MusicListViewController(viewModel: musicListViewModel)
+        musicListViewModel.view = musicListViewController
+        
         let navigationController = UINavigationController(rootViewController: musicListViewController)
         navigationController.navigationBar.prefersLargeTitles = true
         window.rootViewController = navigationController
