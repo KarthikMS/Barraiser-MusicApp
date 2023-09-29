@@ -44,4 +44,15 @@ extension MusicPlayerViewModelImpl {
         }
     }
     
+    func playPauseButtonTapped() {
+        guard let audioPlayer else { return }
+        if !audioPlayer.isPlaying {
+            audioPlayer.play()
+            view?.setPlayPauseButtonTitle("Pause")
+        } else {
+            audioPlayer.pause()
+            view?.setPlayPauseButtonTitle("Play")
+        }
+    }
+    
 }

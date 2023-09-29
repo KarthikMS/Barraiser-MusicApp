@@ -6,7 +6,7 @@
 //
 
 protocol MusicPlayerView: AnyObject {
-    
+    func setPlayPauseButtonTitle(_ title: String)
 }
 
 protocol MusicPlayerViewModel {
@@ -14,4 +14,5 @@ protocol MusicPlayerViewModel {
     var title: String { get }
     
     func fetchMusicData()
+    func playPauseButtonTapped()
 }
